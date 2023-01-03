@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family= Source+Serif+Pro:wght@600 & display = swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --CorDeFundo: rgb(6, 49, 16);
+    --CorPrincipal: #64FF84;
+    --CorSecundaria: #5edf78;
+    --CorTerceira: #399b4d;
+}
+
+body {
+    background-color: var(--CorDeFundo);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: white;
+    border-radius: 4rem;
+    width: 95%;
+    height: 90vh;
+    display: flex;
+}
+
+.caixa-left {
+    width: 50%;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    background-color: var(--CorTerceira);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.foto {
+    max-width: 80%;
+    height: auto;
+}
+
+.caixa-rigth {
+    width: 50%;
+}
+
+.box-container-rigth {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    height: 100%;
+}
+
+hr {
+    box-shadow: #64FF84 1px 1px 8px 0px;
+    width: 100%;
+}
+
+.box-titulo {
+    width: 75%;
+    background-color: var(--CorTerceira);
+    border-radius: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo {
+    width: auto;
+    font-size: 4.7vw;
+    font-family: 'Source Serif Pro', serif;
+    color: var(--CorPrincipal);
+    font-weight: 800;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--CorTerceira)
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box-img img {
+    max-width: 3.7rem;
+    height: auto;
+}
+
+form {
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.5rem;
+    padding-right: 0.8rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white
+}
+
+input {
+    border-radius: 20px;
+    background-color: white;
+    padding: 0.4rem 1.1rem 0.4rem 1rem;
+    border: none;
+    height: 2.3rem;
+    width: 60%;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.box-form {
+    background-color: var(--CorTerceira);
+    width: auto;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.text-form {
+    color: aliceblue;
+    font-size: 2.5vmax;
+    margin-bottom: 5px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#formulario div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#botao {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+button{
+
+    background-color: var(--CorPrincipal);
+    box-shadow: #5edf78 1px 1px 15px 4px;
+    border: none;
+    border-radius: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--CorTerceira);
+    height: 2rem;
+    width: 300px;
+    min-width: auto;
+}
+#contact {
+    width: 100%;
+
+}
+
+li {
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    font-size: 1vmax;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: 0.3rem;
+    color: #64FF84;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contatos {
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 1.4rem;
+}
+
+span {
+    padding-left: 5px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    grid-area: "caixa";
+}
+
+span img {
+    display: inline;
+    display: flex;
+    height: auto;
+    width: 2.6rem;
+}
+
+#caixa1 {
+    grid-area: "caixa1";
+}
+
+/* média quare */
+
+@media (max-width: 1370px) {
+    li {
+        font-size: 1.6vmin;
+    }
+}
+
+@media (max-width:1616px) {
+    span {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "caixa caixa"
+            "caixa caixa"
+            "caixa1 caixa1"
+        ;
+    }
+}
+
+@media (max-width:1148px) {
+
+    #contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        margin-left: 20px;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .caixa-left {
+        display: none;
+    }
+
+    #container {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa-rigth {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box-container-rigth {
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 6vmax;
+    }
+
+    .box-img img {
+        max-width: 5vmax;
+    }
+
+    h3 {
+        font-size: 3.2vmax;
+    }
+
+    li {
+        font-size: 1.6vmax;
+    }
+}
+
+@media (max-width:590px) {
+
+    .box-titulo {
+        width: 100%
+    }
+
+    body {
+        height: 100%;
+        width: 100vw;
+    }
+
+    #container {
+        height: 100vh;
+        width:90vw;
+        padding: 10px 10px;
+    }
+
+    span {
+        width: auto;
+        margin: 0;
+    }
+
+    #contact {
+        height: 50%;
+        padding: 8px;
+    }
+
+    .box-form {
+        height: 100%;
+    }
+
+    ul {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #formulario div {
+        margin-bottom: 10px;
+    }
+
+    #formulario {
+        padding: 5px;
+        height: 100%;
+    }
+
+    #caixa1 li {
+        font-size: 1.3vmax;
+    }
+
+     .caixa-rigth {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box-container-rigth{
+        padding: 10px;
+    }
+}
+
+@media (max-width:519px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:660px){
+    ul{
+        gap: 0;
+    }
+
+    body{
+
+        }
+
+    #formulario div{
+        margin: 0;
+        width: 100%;
+    }
+
+    #formulario div input{
+        width: 70%;
+    }
+
+    #formulario{
+        align-items: center;
+    }
+    #botao{
+        width: 70%;
+    }
+}
